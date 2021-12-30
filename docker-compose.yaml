@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  web:
+    container_name: server
+    build: .
+    depends_on:
+      - db
+    command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
+    environment:
+      - POSTGRES_USER=demouser
+      - POSTGRES_DB=demo
+      - POSTGRES_PASSWORD=password123
+      - DATABASE_URL=postgresql://demouser:password123@db:5432/demo
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+  db:
+    container_name: db
+    image: postgres:alpine
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    environment:
+      - POSTGRES_USER=demouser
+      - POSTGRES_PASSWORD=password123
+      - POSTGRES_DB=demo
+    expose:
+      - 5432
+    command: postgres -c 'max_wal_size=2GB'
