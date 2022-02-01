@@ -90,7 +90,7 @@ You can answer during your interview, but we'd like to know: What problems did y
 
 ___
 
-##Part 2
+## Part 2
 
 The file titled `bad_code.py` has code in it that needs to be improved. Your job is to improve it as you see fit.
 
@@ -102,7 +102,7 @@ Do not edit:
 - The `test_send_report` unit test in `test_send_report.py` 
 - mock_service.py
 
-##Running The Tests
+## Running The Tests
 
 You can run tests locally if you have python3 installed. To do this run `./test_bad_code.py` in your terminal. 
 
