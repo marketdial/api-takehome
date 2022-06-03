@@ -23,7 +23,7 @@ Oranges $3.10
 Celery $1.60
 ```
 
-We also need to store a hierarchy of categories that the products fall into. For example:
+We also need to store a hierarchy (of arbitrary depth) of categories that the products fall into. For example:
 ```
 All Products
     Bakery
