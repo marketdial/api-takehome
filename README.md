@@ -1,6 +1,6 @@
 # Welcome!
 Please complete Part 1 and Part 2 of the MarketDial take home challenge. 
-##Part 1
+## Part 1
 The purpose of part 1 is to create a small Python server that can interact with a PostgreSQL database. This server is built in a docker container and can be run using the command `docker compose up`. Once the server has started you should be able to run `curl localhost:8000` which should return 
 ```json
 {"message":"Hello World"}
@@ -96,10 +96,10 @@ The file titled `bad_code.py` has code in it that needs to be improved. Your job
 
 Files that can be edited: 
 - bad_code.py
-- test_send_report.py 
+- test_bad_code.py 
 
 Do not edit:
-- The `test_send_report` unit test in `test_send_report.py` 
+- The `test_send_report` unit test in `test_bad_code.py` 
 - mock_service.py
 
 ## Running The Tests
