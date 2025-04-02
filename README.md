@@ -62,12 +62,12 @@ Using the database above create a new route in your server which will return all
 ```json
 [
     {
-        product: "Wheat Bread",
-        price: 2.00
+        "product": "Wheat Bread",
+        "price": 2.00
     },
     {
-        product: "Rye Bread",
-        price: 3.10
+        "product": "Rye Bread",
+        "price": 3.10
     },
     ...
     etc.
