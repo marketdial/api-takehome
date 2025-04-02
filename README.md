@@ -1,7 +1,5 @@
 # Welcome!
-Please complete Part 1 and Part 2 of the MarketDial take home challenge. 
-## Part 1
-The purpose of part 1 is to create a small Python server that can interact with a PostgreSQL database. This server is built in a docker container and can be run using the command `docker compose up`. Once the server has started you should be able to run `curl localhost:8000` which should return 
+The purpose of this project is to create a small Python server that can interact with a PostgreSQL database. This server is built in a docker container and can be run using the command `docker compose up`. Once the server has started you should be able to run `curl localhost:8000` which should return 
 ```json
 {"message":"Hello World"}
 ```
@@ -88,29 +86,3 @@ Optionally (time permitting. Not required, but very nice to have) - add addition
 ## Task 5 - Lessons learned, room for improvement?
 You can answer during your interview, but we'd like to know: What problems did you encounter?, how did you solve them? What design tradeoffs did you make? Given more time how could you improve your project (improve its performance, make it more usable, maintainable, testable, etc.)? 
 
-___
-
-## Part 2
-
-The file titled `bad_code.py` has code in it that needs to be improved. Your job is to improve it as you see fit.
-
-Files that can be edited: 
-- bad_code.py
-- test_bad_code.py 
-
-Do not edit:
-- The `test_send_report` unit test in `test_bad_code.py` 
-- mock_service.py
-
-## Running The Tests
-
-You can run tests locally if you have python3 installed. To do this run `./test_bad_code.py` in your terminal. 
-
-You may also run tests in the docker container by running these commands in your terminal: 
- 
-- `docker compose up`
-- `docker exec -it server /bin/bash`
-- `./test_bad_code.py`
-
-**Once submitted `test_send_report` must pass.**
-Be prepared to talk about what changes you made and why. 
